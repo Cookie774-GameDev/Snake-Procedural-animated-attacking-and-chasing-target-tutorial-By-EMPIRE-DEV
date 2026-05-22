@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Procedural Locomotion & Attack | EMPIRE-DEV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-accent">👑</span> EMPIRE-DEV
+        </div>
+        <nav class="nav-links">
+            <a href="Instructions.md">Docs</a>
+            <a href="https://discord.gg/dBgXQ4NER" target="_blank">Discord</a>
+            <a href="Model/SnakeRgigedandTrypoFinal6 1.prefab" target="_blank">Model Prefab</a>
+        </nav>
+    </header>
+
+    <main class="hero-container">
+        <section class="hero">
+            <div class="hero-content">
+                <span class="badge">🐍 Advanced Locomotion</span>
+                <h1>Snake Procedural <br><span class="gradient-text">Attack & Chase AI</span></h1>
+                <p class="hero-desc">Create highly realistic slithering movement, dynamic whisker-based obstacle avoidance, and custom stinger-strike combos in Unity using procedurally animated bone rigs.</p>
+                <div class="cta-buttons">
+                    <a href="https://discord.gg/dBgXQ4NER" target="_blank" class="btn btn-primary">Join Discord</a>
+                    <a href="Model/SnakeRgigedandTrypoFinal6 1.prefab" download class="btn btn-secondary">Get Included Prefab</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="snake_banner.png" alt="Procedural Snake Render" class="glitch-img">
+            </div>
+        </section>
+
+        <section class="details-section">
+            <div class="section-title">
+                <h2>System Overview</h2>
+                <p>The core scripts designed for high-performance physics-based serpentine motion and combat strike cycles.</p>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🧠</div>
+                    <h3>SnakeController.cs</h3>
+                    <p>Handles the AI slither math, whisker raycasting for obstacle steering, chasing, and the stinger lunge attack sequence.</p>
+                    <a href="SnakeController.cs" class="card-link">View Script &rarr;</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌀</div>
+                    <h3>SnakeAntiphasing.cs</h3>
+                    <p>Applies separation forces between body joints in LateUpdate to prevent bones from intersecting or phasing.</p>
+                    <a href="SnakeAntiphasing.cs" class="card-link">View Script &rarr;</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔒</div>
+                    <h3>HeadLock.cs</h3>
+                    <p>Constrains the snake head's yaw and pitch rotations to keep it focused on targets during movement and combat.</p>
+                    <a href="HeadLock.cs" class="card-link">View Script &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="tutorial-preview">
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <div class="play-button"></div>
+                    <p>Snake Setup Video Tutorial <br><span>(YouTube Link Coming Soon)</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 EMPIRE-DEV. Built for Unity Developers. Sovereign Code Base.</p>
+    </footer>
+</body>
+</html>
